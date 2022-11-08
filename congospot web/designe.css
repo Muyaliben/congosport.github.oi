@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(images/image1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: auto;
+    display: flex;
+    padding: 2% 6%;
+    align-items: center;
+    justify-content: space-between;
+    color: #dbd81b;
+}
+
+.logo {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f58823;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+
+/*-------  login form-------*/
+
+.login-page {
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+
+.login-page {
+    position: relative;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    background: #fff3f3;
+    border: 1px solid #ccc;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login-page h1 {
+    margin: 0 0 20px 0;
+}
+
+.login-page input {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 10px;
+}
+
+@media(max-width: 700px) {
+    .login-page {
+        width: 260px;
+        padding: 10% 0 0;
+        margin: auto;
+    }
+}
+
+.login-page input[type=submit] {
+    border: 0;
+    padding: 15px;
+    background: #5b77bd;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*----------- Service---------------*/
+
+.service {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row1 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20pX 12px;
+    box-sizing: border-box;
+    transition: 00.5s;
+}
+
+h3 {
+    text-align: 31%;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.service-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/*----------- packges ---------------*/
+
+.packges {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.packges-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.packges-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.tearm {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.tearm-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.tearm-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tearm-col p {
+    padding: 0;
+}
+
+.tearm-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+/*--------------- testimonials ------------------*/
+
+.testimonials {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.testimonials-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonials-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonials-col p {
+    padding: 0;
+}
+
+.testimonials-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonials-col .fa {
+    color: #f44336;
+}
+
+
+/*----------- call to Action ---------------*/
+
+.cta {
+    margin: 100px auto;
+    width: 89%;
+    background: linear-gradient(to left, #bb645e, #111d5f);
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 135px;
+    border-bottom-left-radius: 135px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+button {
+    padding: 15px 25px;
+    margin: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid #ffc107;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, transparent 50%, #ffc107 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
+}
+
+button:hover {
+    background-position: right;
+    color: #000;
+}
+
+
+/*----------- footer---------------*/
+
+.footer {
+    margin: 100px auto;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 80px 0 28px;
+    border-top-left-radius: 145px;
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+    color: #fff;
+}
+
+.col p {
+    color: #fff;
+    padding: 0;
+    text-align: flex-start;
+    justify-content: space-between;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+form1 {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: ce nter;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form1 .fa {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form1 input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form1 button {
+    background: transparent;
+    border: 0;
+    outline: nano;
+    cursor: pointer;
+}
+
+form1 button .fa {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons .fa {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.copyright {
+    text-align: center;
+    color: #fff;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@media ( max-width:700px) {
+    footer {
+        bottom: unset;
+    }
+    .col {
+        flex-basis: 100%;
+    }
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .title1 {
+        font-size: 10px;
+    }
+    .row1 {
+        flex-direction: column;
+    }
+    .testimonials-col img {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .cta h1 {
+        font-size: 12px;
+    }
+}
